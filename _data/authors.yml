@@ -1,0 +1,58 @@
+# /_data/authors.yml
+
+Saran:
+  name             : "Saran"
+  avatar           : "/assets/images/bio-photo.png"
+  bio              : "A sarcastic nerd and an Android dev 👨‍💻 who loves gaming 🎮 also an extraordinary tea lover. If you see a guy coding with headphones on and headbanging along, then you know it’s Saran. 🙂"
+  location         : "Bengaluru"
+  employer         :
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "http://yourfullgooglescholarurl.com"
+  email            : "saran@sankaran.dev"
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "saran2020"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  lastfm           :
+  linkedin         : "saran2020"
+  orcid            : # "http://orcid.org/yourorcidurl"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : "2758499/saran-sankaran" # 123456/username
+  steam            :
+  tumblr           :
+  twitter          : "SankaranDev"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
+  links:
+    - label        : "Email"
+      icon         : "/assets/image/iconfinder_61-google-inbox_1047447.png"
+      # url          : "mailto:saran@sankaran.dev
+    - label        : "Website"
+      icon         : "fas fa-fw fa-link"
+      # url        : "https://your-website.com"
+    - label        : "Twitter"
+      icon         : "fab fa-fw fa-twitter-square"
+      # url        : "https://twitter.com/SankaranDev"
+    - label        : "Facebook"
+      icon         : "fab fa-fw fa-facebook-square"
+      # url        : "https://facebook.com/"
+    - label        : "GitHub"
+      icon         : "fab fa-fw fa-github"
+      # url        : "https://github.com/saran2020"
+    - label        : "Instagram"
+      icon         : "fab fa-fw fa-instagram"
+      # url        : "https://instagram.com/"
+
