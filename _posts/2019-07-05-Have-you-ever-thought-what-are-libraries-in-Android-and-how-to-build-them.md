@@ -42,13 +42,13 @@ Congratulations we have successfully created a new module. However, this is not 
 Notice the `mylibrary` there? That’s the new library module which we just created. Android studio differentiate between them by showing a different icon for the app module and library module.
 
 How does Android Studio know which one is an app module and which one is a library module? What changed? The answer is hidden inside the module level `build.gradle` file. If you open the app and library modules’ `build.gradle` you will see the first line of app’s Gradle file is
-{% highlight groovy %}
+```groovy
 apply plugin: 'com.android.application'
-{% endhighlight %}
+```
 and that of the library is
-{% highlight groovy %}
+```groovy
 apply plugin: 'com.android.library'
-{% endhighlight %}
+```
 
 This is what tells Android Studio what type of Module it is. Now we can write all of our fancy code inside the library module which we want to distribute.
 
@@ -57,9 +57,9 @@ This is what tells Android Studio what type of Module it is. Now we can write al
 
 ### How do I use this library module in my app?
 Simple!! you just have to add one lie to your app module-level build.gradle file 
-{% highlight groovy %}
+```groovy
 implementation project(path: ':mylibrary')
-{% endhighlight %}
+```
 
 This will only work if your module is in the same project as your app.
 
