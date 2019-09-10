@@ -1,5 +1,6 @@
 ---
-title: Guide on making your library available
+title: Publish your Android library in 6 easy to follow steps
+classes: wide
 categories:
   - Android
 tags:
@@ -29,7 +30,7 @@ I will be continuing on my project from my last post. We will be publishing our 
 7. Click on "Create" and you will be taken to the repository page.
 
 <figure class="align-center">
-  <img src="/assets/images/Screenshot_2019-08-25_1.png" alt="Creating a Repository on Bintray">
+  <img src="/assets/images/Screenshot_2019-08-25_1.png" alt="Creating a Repository on Bintray" style="width:62%;height:100%;">
   <figcaption>Creating a Repository on Bintray</figcaption>
 </figure>
 
@@ -52,7 +53,7 @@ I will be continuing on my project from my last post. We will be publishing our 
 4. Enter your GitHub project URL into the "Version Control" field.
 
 <figure class="align-center">
-  <img src="/assets/images/Screenshot_2019-08-25.png" alt="Creating new package">
+  <img src="/assets/images/Screenshot_2019-08-25.png" alt="Creating new package" style="width:62%;height:100%;">
   <figcaption>Creating new package</figcaption>
 </figure>
 
@@ -60,7 +61,7 @@ I will be continuing on my project from my last post. We will be publishing our 
 Open "Edit Profile" and go to "API Key" section and save the API key somewhere. We will need this API Key when we automate the release of a new version.  
 
 <figure class="align-center">
-  <img src="/assets/images/Screenshot_2019-08-27_2.png" alt="Copy API key">
+  <img src="/assets/images/Screenshot_2019-08-27_2.png" alt="Copy API key" style="width:62%;height:100%;">
   <figcaption>Copy API key</figcaption>
 </figure>
 
@@ -195,7 +196,7 @@ buildscript {
 You can verify the upload by going to the _Repository -> Package -> Files -> {Version you uploaded}_ on Bintray dashboard and confirming that an .aar file exists.
 
 <figure class="align-center">
-  <img src="/assets/images/Screenshot_2019-08-27.png" alt="Files after upload on Bintray">
+  <img src="/assets/images/Screenshot_2019-08-27.png" alt="Files after upload on Bintray" style="width:62%;height:100%;">
   <figcaption>Files after upload on Bintray</figcaption>
 </figure>
 
@@ -203,7 +204,7 @@ You can verify the upload by going to the _Repository -> Package -> Files -> {Ve
 To make your library available to developers you will need to link your library package to Jcenter. You will find the option your package page. To add your library to Jcenter click on "Add to Jcenter"
 
 <figure class="align-center">
-  <img src="/assets/images/Screenshot_2019-08-27_1.png" alt="Add to Jcenter">
+  <img src="/assets/images/Screenshot_2019-08-27_1.png" alt="Add to Jcenter" style="width:62%;height:100%;">
   <figcaption>Add to Jcenter</figcaption>
 </figure>
 
