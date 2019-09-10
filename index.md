@@ -13,4 +13,4 @@ I love tinkering and playing around with UI and enjoy creating fancy animations 
 
 Apart from computers, I enjoy listening to hip-hop music ❤️, poems and swimming.
 
-You can reach me on [Twitter](https://twitter.com/SankaranDev) for a chat or fill the form below.
+You can reach me on [Twitter](https://twitter.com/SankaranDev) for a chat.
