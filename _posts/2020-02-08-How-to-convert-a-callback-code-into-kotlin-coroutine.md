@@ -1,5 +1,5 @@
 ---
-title: How I renamed an entire library already in production
+title: How to convert a callback based code into a Kotlin Coroutine
 categories:
   - Kotlin
 tags:
@@ -13,7 +13,7 @@ tags:
 
 As you already know, Kotlin Co-routines turns a callback based code block into sequential code. Let me show you an example for the people who doesn't know already.
 
-```
+```kotlin
 val getUserCall = apiService.getUser(15)
 getUserCall.enqueue(object: Callback<User> {
 	override fun onResponse(call: Call<User>, response: Response<user>) {
@@ -30,7 +30,7 @@ This is how a typical callback based code would look like in Kotlin. But, aren't
 
 Ok let me show you the above example using co-routines
 
-```
+```kotlin
 launch {
 	try {
 		val user = apiService.getUser(15)
@@ -47,7 +47,7 @@ In such cases what we can do though is convert these callbacks into Kotlin co-ro
 
 Let's take the previous example of getting a user from a api call.
 
-```
+```kotlin
 launch {
 	try {
 		val user = getUser(apiService, 15)
