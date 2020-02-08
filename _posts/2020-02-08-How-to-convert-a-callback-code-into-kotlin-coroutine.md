@@ -13,7 +13,7 @@ tags:
 
 As you already know, Kotlin Co-routines turns a callback based code block into sequential code. Let me show you an example for the people who doesn't know already.
 
-	```
+```
     val getUserCall = apiService.getUser(15)
 	getUserCall.enqueue(object: Callback<User> {
 		override fun onResponse(call: Call<User>, response: Response<user>) {
@@ -24,13 +24,13 @@ As you already know, Kotlin Co-routines turns a callback based code block into s
 			t.printStackTrace()
 		}
 	})
-	```
+```
 
 This is how a typical callback based code would look like in Kotlin. But, aren't we talking about co-routines, why do we still have callbacks?
 
 Ok let me show you the above example using co-routines
 
-	```
+```
 	launch {
 		try {
     		val user = apiService.getUser(15)
@@ -39,7 +39,7 @@ Ok let me show you the above example using co-routines
 			t.printStackTrace()
 		}
 	}
-	```
+```
 
 Cool!! but here we assume that `apiService.getUser(15)` is a function which supports co-rotines. However often that's not the case, becasue usually we are using a framework or libraries, thats written on/or for Java. In such case, we can't avoid using callbacks. 
 
@@ -47,7 +47,7 @@ In such cases what we can do though is convert these callbacks into Kotlin co-ro
 
 Let's take the previous example of getting a user from a api call.
 
-	```
+```
 	launch {
 		try {
     		val user = getUser(apiService, 15)
@@ -68,7 +68,7 @@ Let's take the previous example of getting a user from a api call.
 			continuation.resumeWithException(t)
 		}
 	}
-	```
+```
 
 Here we ar using a `suspendCoroutine {}` to convert a callback into a co-routine. In `getUser()` first we launch a `suspendCoroutine` block. 
 
