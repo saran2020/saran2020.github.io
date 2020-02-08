@@ -12,6 +12,7 @@ tags:
 ---
 
 As you already know, Kotlin Co-routines turns a callback based code block into sequential code. Let me show you an example for the people who doesn't know already.
+
 	```
     val getUserCall = apiService.getUser(15)
 	getUserCall.enqueue(object: Callback<User> {
@@ -28,6 +29,7 @@ As you already know, Kotlin Co-routines turns a callback based code block into s
 This is how a typical callback based code would look like in Kotlin. But, aren't we talking about co-routines, why do we still have callbacks?
 
 Ok let me show you the above example using co-routines
+
 	```
 	launch {
 		try {
@@ -44,6 +46,7 @@ Cool!! but here we assume that `apiService.getUser(15)` is a function which supp
 In such cases what we can do though is convert these callbacks into Kotlin co-routines. Lemme show you how!!
 
 Let's take the previous example of getting a user from a api call.
+
 	```
 	launch {
 		try {
