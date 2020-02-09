@@ -16,12 +16,12 @@ As you already know, Kotlin Co-routines turns a callback based code block into s
 ```kotlin
 val getUserCall = apiService.getUser(15)
 getUserCall.enqueue(object: Callback<User> {
-	override fun onResponse(call: Call<User>, response: Response<user>) {
+    override fun onResponse(call: Call<User>, response: Response<user>) {
         doSomeThing(response.body())
-	}
+    }
 
-	override fun onFailure(call: Call<User>, t: Throwable) {
-		t.printStackTrace()
+    override fun onFailure(call: Call<User>, t: Throwable) {
+	    t.printStackTrace()
 	}
 })
 ```
@@ -32,12 +32,12 @@ Ok let me show you the above example using co-routines
 
 ```kotlin
 launch {
-	try {
-		val user = apiService.getUser(15)
-		doSomeThing(user)
-	} catch(t: Throwable) {
-		t.printStackTrace()
-	}
+    try {
+        val user = apiService.getUser(15)
+        doSomeThing(user)
+    } catch(t: Throwable) {
+        t.printStackTrace()
+    }
 }
 ```
 
@@ -49,25 +49,25 @@ Let's take the previous example of getting a user from a api call.
 
 ```kotlin
 launch {
-	try {
-		val user = getUser(apiService, 15)
-		doSomeThing(user)
-	} catch(t: Throwable) {
-		t.printStackTrace()
-	}
+    try {
+        val user = getUser(apiService, 15)
+        doSomeThing(user)
+    } catch(t: Throwable) {
+        t.printStackTrace()
+    }
 }
 
 suspend fun getUser(apiService: Service, id: Int) = suspendCoroutine<User> { continuation ->
-	val getUserCall = apiService.getUser(15)
-	getUserCall.enqueue(object: Callback<User> {
+    val getUserCall = apiService.getUser(15)
+    getUserCall.enqueue(object: Callback<User> {
 		
-		override fun onResponse(call: Call<User>, response: Response<User>) {
-        	continuation.resume(response.body())
-		}
+        override fun onResponse(call: Call<User>, response: Response<User>) {
+            continuation.resume(response.body())
+        }
 
-		override fun onFailure(call: Call<User>, t: Throwable) {
-			continuation.resumeWithException(t)
-		}
+        override fun onFailure(call: Call<User>, t: Throwable) {
+            continuation.resumeWithException(t)
+        }
 }
 ```
 
