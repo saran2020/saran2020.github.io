@@ -60,13 +60,14 @@ launch {
 suspend fun getUser(apiService: Service, id: Int) = suspendCoroutine<User> { continuation ->
 	val getUserCall = apiService.getUser(15)
 	getUserCall.enqueue(object: Callback<User> {
+		
 		override fun onResponse(call: Call<User>, response: Response<User>) {
-        continuation.resume(response.body())
-	}
+        	continuation.resume(response.body())
+		}
 
-	override fun onFailure(call: Call<User>, t: Throwable) {
-		continuation.resumeWithException(t)
-	}
+		override fun onFailure(call: Call<User>, t: Throwable) {
+			continuation.resumeWithException(t)
+		}
 }
 ```
 
