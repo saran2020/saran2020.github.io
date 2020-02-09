@@ -21,7 +21,7 @@ getUserCall.enqueue(object: Callback<User> {
     }
 
     override fun onFailure(call: Call<User>, t: Throwable) {
-	    t.printStackTrace()
+        t.printStackTrace()
     }
 })
 ```
