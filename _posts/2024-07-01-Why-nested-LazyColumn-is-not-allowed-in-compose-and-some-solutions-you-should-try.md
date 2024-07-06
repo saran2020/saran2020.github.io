@@ -1,5 +1,5 @@
 ---
-title: "Why nested LazyColumn is not allowed in compose and some soutions you should try"
+title: "Why nested LazyColumn is not allowed in compose and some solutions you should try"
 date: 2024-07-01 00:00:00 +0000
 categories: [Compose, Android]
 tags: [scrolling, UI, Android, Compose]
