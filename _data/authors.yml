@@ -2,14 +2,14 @@
 
 Saran:
   name             : "Saran"
-  avatar           : "/assets/images/bio-photo.png"
-  bio              : "A sarcastic nerd and an Android dev 👨‍💻 who loves gaming 🎮 also an extraordinary tea lover. If you see a guy coding with headphones on and headbanging along, then you know it’s Saran. 🙂"
-  location         : "Bengaluru"
+  avatar           : "/assets/images/bio-photo-1.png"
+  bio              : "I am an Android developer with passion for builing slick animations and user interfaces."
+  location         : "Banglore"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : "saran@sankaran.dev"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  email            : #"saran@sankaran.dev"
+  researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
