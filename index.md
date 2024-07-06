@@ -4,13 +4,11 @@ permalink: /
 excerpt: "Theory exists, but to only support the practical."
 ---
 
-![](/assets/images/PicsArt_07-16-07.16.46.png){: .align-center}
+<img src="/assets/images/IMG_2024_06_30_192332.png" style="display: block; margin: 0 auto; width: 450px; height: 100%; object-fit: cover;">
 
 ## About Me
-I’m Saran! I love computers and enjoy building stuff – I’m lucky that I get to do it as my job. I currently work from Bengaluru as an Android Developer at [epiFi](https://epifi.com/) helping them with my Android skills to build a banking platform.
+I’m Saran, An Android developer with 5+ years of experience in developing Native Android apps 👨‍💻, along with some Backend. Currently, I am building and scaling  <a target="_blank" href="http://fi.money"><img src="/assets/images/fi_image.png" alt="flowers"></a>  from 0 to 10 million+ users and beyond.
 
-I love tinkering and playing around with UI and enjoy creating fancy animations on Android during some of my free time. Recently, I have started exploring backend frameworks like Django using Python. 
+Outside of work, I enjoy listening to hip-hop music 🎧 and spending my time on treks 🏃‍♂️.
 
-Apart from computers, I enjoy listening to hip-hop music ❤️, poems and swimming.
-
-You can reach me on [Twitter](https://twitter.com/SankaranDev) for a chat.
+You can reach out to me on [LinkedIn](https://www.linkedin.com/in/saran2020/) or [Twitter](https://twitter.com/SankaranDev) to chat about Android development, technology or music!
