@@ -1,5 +1,5 @@
 ---
-title: Productivity booster
+title: How I'm saving my 7-10 hours of productivity with a simple trick
 categories:
   - Software engineering
 tags:
