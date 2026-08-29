@@ -11,4 +11,4 @@ I’m Saran, An Android developer with 5+ years of experience in developing Nati
 
 Outside of work, you’ll find me vibing to hip-hop 🎧 or making a splash in the pool 🏊‍♂️.
 
-You can reach out to me on [LinkedIn](https://www.linkedin.com/in/saran2020/) or [Twitter](https://twitter.com/SankaranDev) to chat about Android development, technology or music!
+You can reach out to me on [LinkedIn](https://www.linkedin.com/in/saran2020/) or [X](https://x.com/SankaranDev) to chat about Android development, technology or music!
