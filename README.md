@@ -31,7 +31,7 @@ Visit the live site: [https://saran.sankaran.dev](https://saran.sankaran.dev)
 
 ## Deployment
 
-The site automatically builds and deploys to **GitHub Pages** on every push to the `master` branch using GitHub Actions (`.github/workflows/deploy.yml`).
+The site automatically builds and deploys to **GitHub Pages** on every push to the `main` branch using GitHub Actions (`.github/workflows/deploy.yml`).
 
 Pull requests are automatically validated using CI build verification (`.github/workflows/ci.yml`).
 
