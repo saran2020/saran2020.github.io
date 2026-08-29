@@ -1,22 +1,20 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
+# Core Jekyll 4 & Minimal Mistakes Theme
+gem "jekyll", "~> 4.3.4"
+gem "minimal-mistakes-jekyll", "~> 4.26.0"
 
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
-# uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
+# Essential Jekyll Plugins
+gem "jekyll-include-cache", "~> 0.2.1"
+gem "jekyll-feed", "~> 0.17.0"
+gem "jekyll-sitemap", "~> 1.4.0"
+gem "jekyll-paginate", "~> 1.1.0"
+gem "jemoji", "~> 0.13.0"
+gem "jekyll-gist", "~> 1.5.0"
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
-gem "jekyll-remote-theme"
-gem "jekyll-include-cache"
-
+# Ruby 3+ Web Server for local preview
 gem "webrick", "~> 1.8"
+
+# Windows cross-platform support
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "wdm", "~> 0.1.1", platforms: [:mingw, :mswin, :x64_mingw]

@@ -1,13 +1,42 @@
-Static Website based on jekyll and theme provided by [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes). Visit the actual site at https://saran.sankaran.dev/
+# saran2020.github.io
 
-# Local development
+Personal website and technical blog built with [Jekyll](https://jekyllrb.com/) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme.
 
-To run this Jekyll site on your local machine, follow these steps:
+Visit the live site: [https://saran.sankaran.dev](https://saran.sankaran.dev)
 
-1. Install Jekyll by running the command `gem install jekyll` in your terminal.
-2. Clone the repository containing your Jekyll site code.
-3. Navigate to the root directory of your Jekyll site in your terminal.
-4. Run the command `bundle exec jekyll serve --incremental --draft` to start the local development server.
-5. Open your web browser and visit `http://localhost:4000` to view your site.
+---
 
-For more information on Jekyll, visit the official documentation at https://jekyllrb.com/docs/home/
+## Local Development
+
+### Prerequisites
+- **Ruby**: Version `3.3.12` (managed via `mise`, `rbenv`, `asdf`, or system Ruby)
+- **Bundler**: Version `2.5+`
+
+### Setup and Running Locally
+
+1. **Install dependencies**:
+   ```bash
+   bundle install
+   ```
+
+2. **Start the development server with live reload**:
+   ```bash
+   bundle exec jekyll serve --livereload
+   ```
+
+3. **Open in browser**:
+   Navigate to [http://localhost:4000](http://localhost:4000).
+
+---
+
+## Deployment
+
+The site automatically builds and deploys to **GitHub Pages** on every push to the `master` branch using GitHub Actions (`.github/workflows/deploy.yml`).
+
+Pull requests are automatically validated using CI build verification (`.github/workflows/ci.yml`).
+
+---
+
+## License
+
+Content and articles &copy; Saran Sankaran. Theme code licensed under MIT by Michael Rose.
