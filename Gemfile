@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Core Jekyll 4 & Minimal Mistakes Theme
-gem "jekyll", "~> 4.3.4"
+gem "jekyll", "~> 4.4.1"
 gem "minimal-mistakes-jekyll", "~> 4.26.0"
 
 # Essential Jekyll Plugins
