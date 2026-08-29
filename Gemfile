@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 # Core Jekyll 4 & Minimal Mistakes Theme
 gem "jekyll", "~> 4.3.4"
-gem "minimal-mistakes-jekyll", "~> 4.26.0"
+gem "minimal-mistakes-jekyll", "~> 4.28.1"
 
 # Essential Jekyll Plugins
 gem "jekyll-include-cache", "~> 0.2.1"
