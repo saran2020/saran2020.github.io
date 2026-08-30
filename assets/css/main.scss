@@ -1,0 +1,62 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'dirt' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* Author profile styling */
+.author__content {
+  @include breakpoint($large) {
+    padding-bottom: 18px;
+  }
+}
+
+.author__name {
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.author__urls {
+  li[itemprop="homeLocation"] {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  li:not([itemprop="homeLocation"]) {
+    display: inline-block;
+    margin-inline-end: 8px;
+    margin-bottom: 4px;
+    font-size: 1.15em;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 6px;
+      text-decoration: none;
+
+      .label {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.75;
+      }
+    }
+  }
+}
