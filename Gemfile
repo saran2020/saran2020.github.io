@@ -6,7 +6,7 @@ gem "minimal-mistakes-jekyll", "~> 4.28.1"
 
 # Essential Jekyll Plugins
 gem "jekyll-include-cache", "~> 0.2.1"
-gem "jekyll-feed", "~> 0.17.0"
+gem "jekyll-feed", "~> 0.18.0"
 gem "jekyll-sitemap", "~> 1.4.0"
 gem "jekyll-paginate", "~> 1.1.0"
 gem "jemoji", "~> 0.13.0"
